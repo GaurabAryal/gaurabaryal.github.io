@@ -14,197 +14,127 @@
 <!--//webfonts-->
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript" src="js/scroll.js"></script>
 <!--/script-->
 </head>
 <body>
-		<div class="banner" id="home">
-			<div class="header-top">
-				<div class="container">	
-					<span class="menu"> </span>
-					<div class="top-menu">
-						<nav>
-							<ul class="cl-effect-16">
-								<li><a class="active scroll" href="#home" data-hover="Home">Home</a></li>
-								<li><a class="scroll" href="#about" data-hover="About">About</a></li>
-								<li><a class="scroll" href="#port" data-hover="Projects">Projects</a></li>
-								<li><a class="scroll" href="#contact" data-hover="Work Experience">Work Experience</a></li>
-								<li><a class="scroll" href="#contact" data-hover="Blog">Blog</a></li>
-								<li><a class="scroll" href="#contact" data-hover="Contact">Contact</a></li>
-								<div class="clearfix"></div>
-							</ul>
-						</nav>		
-					</div><script src="js/menu_jquery.js"></script>
+<nav class='navbar navbar-default navbar-fixed-top' id="nav-scroll" role='navigation'>
+  <div class='container'>
+    <div class='navbar-header'>
+      <button class='navbar-toggle' data-target='#bs-example-navbar-collapse-1' data-toggle='collapse' type='button'>
+        <span class='sr-only'>Toggle navigation</span>
+        <span class='icon-bar'></span>
+        <span class='icon-bar'></span>
+        <span class='icon-bar'></span>
+      </button>
+      <a class='navbar-brand' href='#'>Gaurab Aryal</a>
+    </div>
+    <div class='collapse navbar-collapse' id='bs-example-navbar-collapse-1 nav-scroll-in'>
+      <ul class='nav navbar-nav navbar-right'>
+        <li class='active'>
+          <a href='#home'>Home</a>
+        </li>
+        <li>
+          <a href='#about'>About</a>
+        </li>
+        <li>
+          <a href='#portfolio'>Portfolio</a>
+        </li>
+        <li>
+          <a href='#contact'>Blog</a>
+        </li>
+        <li>
+          <a href='#contact'>Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+<div class="wrap" id="home">
+  <div class='container scale2'>
+    <div class='row scale'>
+      <div class='col-sm-12'>
+        <div class='hero'>
+          <div class='hero__text'>
+            <h1 class='hero__title text-center'>Gaurab Aryal</h1>
+            <div class="wrapper">
+    <div class="roles">
+        <div>
+            I am a web developer.
+        </div>
+      
+        <div>
+            I am a game creator.
+        </div>
+      
+        <div>
+            I am a student.
+        </div>
+      
+        <div>
+            I am an aspiring learner.
+        </div>
+    </div>
 
-				<!-- script-for-menu -->
-								<script>
-									$("span.menu").click(function(){
-										$(".top-menu ul").slideToggle("slow" , function(){
-										});
-									});
-								</script>
-								<!-- script-for-menu -->
+  </div>
+<script type="text/javascript">var current = 1; //keeps track of the current div
+var height = $('.roles').height(); //the height of the roles div
+var numberDivs = $('.roles').children().length; //the number of children of the roles div
+var first = $('.roles div:nth-child(1)'); //the first div nested in roles div
+setInterval(function() {
+    var number = current * -height;
+    first.css('margin-top', number + 'px');
+    if (current === numberDivs) {
+        first.css('margin-top', '0px');
+        current = 1;
+    } else current++;
+}, 2000);</script>
+          <div class='hero__underline'></div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+</div>
+  <!--about-->
+  <div class="about" id="about">
+     <div class="container" style="background-color: transparent;">
+     <center><h1 class="tittle" id="projects-header">About Me</h1></center>
+        <div class="col-md-5 ab-grid pic" style="height:550px;">
+      </div>
+      <div class="col-md-7 ab-grid text">
+        <h4>Hi, I am Gaurab! </h4>
+      <p>I am currently enrolled in University of Waterloo, 1A Systems Design Engineering. I love working on creative projects, be it hardware or software. I spend a large portion of my spare time working on my game Fungeons. </p>
+      <p>Otherwise, I enjoy watching and playing basketball. I am a beginner juggler and I am always looking to improve my juggling skills. Lastly, I have a betta fish named Oscar. I love taking care of him and teaching him new tricks!</p>
+      <p>Please contact me if you have any questions regarding my projects, including this website :)!</p>
+       
+      </div>
+      <div class="clearfix"> </div>
+     </div>
+    </div>  
+<div class="wrap2" id="portfolio">
+<div class="container" style="background-color: transparent;">
+  <div class="row">
+    <center><h1 id="projects-header">Projects</h1></center>
+    <div class="row">
+      <div class="col-lg-4 col-sm-4 col-6"><a href="https://github.com/GaurabAryal/Fungeons" title="Image 1"><img src="./images/rsz_g1.jpg" class="thumbnail img-responsive"></a></div>
+      <div class="col-lg-4 col-sm-4 col-6"><a href="https://github.com/GaurabAryal/Fungeons-Web" title="Image 2"><img src="./images/g2.jpg" class="thumbnail img-responsive"></a></div>
+      <div class="col-lg-4 col-sm-4 col-6"><a href="https://github.com/GaurabAryal/SpaceAdventure" title="Image 3"><img src="./images/rsz_g3.jpg" class="thumbnail img-responsive"></a></div>
+      <div class="col-lg-4 col-sm-4 col-6"><a href="https://github.com/GaurabAryal/ContestTraining" title="Image 4"><img src="./images/g4.jpg" class="thumbnail img-responsive"></a></div>
+      <div class="col-lg-4 col-sm-4 col-6"><a href="https://github.com/GaurabAryal/CompEngineering" title="Image 5"><img src="./images/g5.jpg" class="thumbnail img-responsive"></a></div>
+      <div class="col-lg-4 col-sm-4 col-6"><a href="https://github.com/GaurabAryal/WorkYoBrain" title="Image 6"><img src="./images/g6.png" class="thumbnail img-responsive"></a></div>
+    </div>
+  </div>
+</div>
+</div>
 
-				 <div class="clearfix"></div>
-			<!-- script-for-menu -->
-		    </div>
-		  </div>
-		<!--banner-->	
-		<div class="container">	
-		      <!-- script-for-menu -->	  	 
-				  <div class="banner-info">	
-						 <div class="logo">
-							  <a href="index.html"><h1>Gaurab Aryal </h1></a>
-						  </div>
-						<div class="scroll-down">
-						<a class="downarrow scroll" id="downarrows"><span></span></a>
-						</div>
-				  </div>
-			</div>
-		</div>
-	<!--about-->
-	<div class="about" id="about">
-	   <div class="container">
-	   <h3 class="tittle">About Me</h3>
-	      <div class="col-md-5 ab-grid pic" style="height:550px;">
-		  </div>
-		  <div class="col-md-7 ab-grid text">
-		    <h4>Hi, I am Gaurab! </h4>
-			<p>I am currently enrolled in University of Waterloo, 1A Systems Design Engineering. I love working on creative projects, be it hardware or software. I spend a large portion of my spare time working on my game Fungeons. </p>
-			<p>Otherwise, I enjoy watching and playing basketball. I am a beginner juggler and I am always looking to improve my juggling skills. Lastly, I have a betta fish named Oscar. I love taking care of him and teaching him new tricks!</p>
-			<p>Please contact me if you have any questions regarding my projects, including this website :)!</p>
-			 
-		  </div>
-		  <div class="clearfix"> </div>
-	   </div>
-    </div>	   
-	<!--//about-->
-
-	<div class="gallery" id="port">
-		<div class="container">
-			<h3 class="tittle port">Projects</h3>
-		   <div class="gallery-bottom">
-					<div class="col-md-4 bottom-gallery">
-						<a href="https://github.com/GaurabAryal/Fungeons" rel="title" class="b-link-stripe b-animate-go  thickbox">
-						<img class="img-responsive" src="images/rsz_g1.jpg" />
-						<div class="b-wrapper">
-						  <h3 class="b-animate b-from-left    b-delay03 "> </h3>
-						</div>
-	                    </a>
-					</div>
-					<div class="col-md-4 bottom-gallery">
-						<a href="https://github.com/GaurabAryal/Fungeons-Web" rel="title" class="b-link-stripe b-animate-go  thickbox">
-						<img class="img-responsive" src="images/g2.jpg" />
-						<div class="b-wrapper">
-						  <h3 class="b-animate b-from-left    b-delay03 "> </h3>
-						</div>
-	                      </a>
-					</div>
-					<div class="col-md-4 bottom-gallery">
-						<a href="https://github.com/GaurabAryal/SpaceAdventure" rel="title" class="b-link-stripe b-animate-go  thickbox">
-						<img class="img-responsive" src="images/rsz_g3.jpg" />
-						<div class="b-wrapper">
-						  <h3 class="b-animate b-from-left    b-delay03 "> </h3>
-						</div>
-	                      </a>
-					</div>
-					<div class="col-md-4 bottom-gallery">
-						<a href="https://github.com/GaurabAryal/ContestTraining" rel="title" class="b-link-stripe b-animate-go  thickbox">
-						<img class="img-responsive" src="images/rsz_1g4.jpg" />
-						<div class="b-wrapper">
-						  <h3 class="b-animate b-from-left    b-delay03 "> </h3>
-						</div>
-	                      </a>
-					</div>
-					<div class="col-md-4 bottom-gallery">
-						<a href="https://github.com/GaurabAryal/CompEngineering" rel="title" class="b-link-stripe b-animate-go  thickbox">
-						<img class="img-responsive" src="images/g5.jpg" />
-						<div class="b-wrapper">
-						  <h3 class="b-animate b-from-left    b-delay03 "> </h3>
-						</div>
-	                      </a>
-					</div>
-					<div class="col-md-4 bottom-gallery">
-						<a href="https://github.com/GaurabAryal/WorkYoBrain" rel="title" class="b-link-stripe b-animate-go  thickbox">
-						<img class="img-responsive" src="images/g6.png" />
-						<div class="b-wrapper">
-						  <h3 class="b-animate b-from-left    b-delay03 "> </h3>
-						</div>
-	                      </a>
-					</div>
-					<div class="clearfix"> </div>
-			</div>
-			
-		</div>
-	</div>
-		<script src="js/jquery.chocolat.js"></script>
-		<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" charset="utf-8">
-		<!--light-box-files -->
-		<!-- Javascript calls -->
-		<script type="text/javascript" charset="utf-8">
-				$(function() {
-					$('#port a').Chocolat({overlayColor:'#000',leftImg:'images/leftw.gif',rightImg:'images/rightw.gif',closeImg:'images/closew.gif'});
-				});
-		</script>
-
-<!--//portfolio-->
-
- <!--start-contact-->
-	 <div class="contact_desc" id="contact">
-		        <div class="container">
-		        	<h3 class="tittle">Contact Me</h3>
-			         <div class="contact-form">
-				  	   <form class="left_form">
-					    	<div>
-						    	<span><label>NAME</label></span>
-						    	<span><input name="userName" type="text" class="textbox"></span>
-						    </div>
-						    <div>
-						    	<span><label>E-MAIL</label></span>
-						    	<span><input name="userEmail" type="text" class="textbox"></span>
-						    </div>
-						    <div>
-						     	<span><label>Fax</label></span>
-						    	<span><input name="userPhone" type="text" class="textbox"></span>
-						    </div>
-					    </form>
-					    <form class="right_form">
-					        <div>					    	
-						    	<span><label>SUBJECT</label></span>
-						    	<span><textarea name="userMsg"> </textarea></span>
-						    </div>
-						   <div>
-						   		<input type="submit" value="Submit " />
-						  </div>
-					    </form>
-					    <div class="clearfix"></div>
-				  </div>
-				  </div>
-			</div>
-
-	<!--//contact-->
-
-
-	<!--footer-->
-	<div class="copy">
-		<p>&copy; 2015 Gaurab Aryal. All Rights Reserved | Design by <a href="http://w3layouts.com/">W3layouts</a> & Gaurab Aryal </p>
-	</div>
-							<!--start-smoth-scrolling-->
-						<script type="text/javascript">
-									$(document).ready(function() {
-										/*
-										var defaults = {
-								  			containerID: 'toTop', // fading element id
-											containerHoverID: 'toTopHover', // fading element hover id
-											scrollSpeed: 1200,
-											easingType: 'linear' 
-								 		};
-										*/
-										
-										$().UItoTop({ easingType: 'easeOutQuart' });
-										
-									});
-								</script>
-		<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-
+<div ="contact"></div>
+<style>.modal-dialog {width:600px;}
+.thumbnail {margin-bottom:6px;}</style>
 </body>
+    <div class='col-xs-12 col-sm-6'>
+      <p class='footer__text text-center'>&copy; 2015 Gaurab Aryal  &middot; All Rights Reserved</p>
+    </div>
 </html>
