@@ -259,7 +259,7 @@ hr {
 }
 .img:hover
 {
-        opacity: 0.7;
+        opacity: 0.9;
         -webkit-animation: swing 1s ease;
         animation: swing 1s ease;
         -webkit-animation-iteration-count: 1;
